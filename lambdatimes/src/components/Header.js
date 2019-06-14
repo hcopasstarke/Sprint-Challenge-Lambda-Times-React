@@ -37,7 +37,7 @@ const HeaderContainer = styled.div`
 const Header = () => {
   return (
     <HeaderContainer>
-      <HeaderSpan>SMARCH 32, 2018</HeaderSpan>
+      <HeaderSpan>MARCH 32, 2018</HeaderSpan>
       <HeaderH1>Lambda Times</HeaderH1>
       <HeaderTemp>98°</HeaderTemp>
     </HeaderContainer>
