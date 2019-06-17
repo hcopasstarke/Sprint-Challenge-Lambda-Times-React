@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
-
 import Tabs from './Tabs';
 import Cards from './Cards';
-
-
-import { tabData, cardData } from '../../data';
+import {tabData, cardData} from '../../data';
 
 export default class Content extends Component {
   constructor(props) {
@@ -17,11 +14,11 @@ export default class Content extends Component {
   }
 
   componentDidMount() {
-    this.setState({ tabs: tabData, cards: cardData });
+    this.setState({tabs: tabData, cards: cardData});
   }
 
   changeSelected = tab => {
-    this.setState({ selected: tab });
+    this.setState({selected: tab});
   }
 
   filterCards = (event) => {

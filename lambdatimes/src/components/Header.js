@@ -13,27 +13,31 @@ const HeaderContainer = styled.div`
   margin-top: 44px;
   padding-bottom: 15px;
 `;
+
  const HeaderSpan = styled.span`
   align-self: flex-end;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: bold;
   letter-spacing: 1px;
   margin-left: 25px;
   flex: 1;
 `;
+
  const HeaderH1 = styled.h1`
   font-size: 60px;
   font-family: Didot, serif;
   font-weight: bold;
   flex: 8;
   text-align: center;
-  color: #000;
+  color: #333;
 `;
+
  const HeaderTemp = styled.span`
   text-align: right;
   margin-right: 25px;
   flex: 1;
 `;
+
 const Header = () => {
   return (
     <HeaderContainer>

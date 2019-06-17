@@ -8,9 +8,10 @@ const TopBarWrapper = styled.div`
   align-items: none;
   flex-direction: row;
   position: fixed;
-  height: 44px;
-  background-color: #333;
+  height: 50px;
+  background-color: #222;
 `;
+
  const TopBarContainer = styled.div`
   width: 100%;
   display: flex;
@@ -18,9 +19,10 @@ const TopBarWrapper = styled.div`
   align-items: none;
   flex-direction: row;
   color: #fff;
-  letter-spacing: 1px;
-  padding: 0 10px;
+  letter-spacing: 1.5px;
+  padding: 0 5px;
 `;
+
  const LeftContainer = styled.div`
   display: flex;
   justify-content: none;
@@ -29,6 +31,7 @@ const TopBarWrapper = styled.div`
   flex: 1;
   font-size: 11px;
 `;
+
  const LeftSpan = styled.span`
   cursor: pointer;
   margin-right: 25%;
@@ -40,24 +43,27 @@ const TopBarWrapper = styled.div`
   align-items: center;
   flex-direction: row;
   flex: 3;
-  font-size: 9px;
+  font-size: 10px;
 `;
+
  const CenterSpan = styled.span`
   cursor: pointer;
   margin-right: 5%;
      &:hover {
-    text-decoration: underline;
+    text-decoration: underline overline;
   }
 `;
+
  const RightContainer = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
   flex-direction: row;
   flex: 1;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: bold;
 `;
+
  const RightSpan = styled.span`
   cursor: pointer;
 `;
