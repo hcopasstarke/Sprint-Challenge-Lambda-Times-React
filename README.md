@@ -28,29 +28,46 @@ Look through the application code. If you have the old Lambda Times (Applied Jav
 
 ## Self-Study/Essay Questions
 
-- [ ] What are PropTypes used for? Please describe why it's important to type check our data in JavaScript.
-- [ ] Describe a life-cycle event in React?
-- [ ] Explain the details of a Higher Order Component?
-- [ ] What are three different ways to style components in React? Explain some of the benefits of each.
+- [X] What are PropTypes used for? Please describe why it's important to type check our data in JavaScript.
+
+PropTypes allow you to define what props your component needs and what type(s) they should be (the interface), so whatever prop the parent component has can be passed to the child component. PropTypes are also helpful when it comes to de-bugging as providing the wrong prop will log a warning to the console.
+
+- [X] Describe a life-cycle event in React?
+
+React allows you to define classes/functions with methods that are called during the lifecycle of a component which allows you to update the UI and application states. First, there's the mounting phase: an instance of a component is created and inserted into the DOM. Then, there's the updating phase: when a component is updated or state changes so it's re-rendered. Lastly, there's the unmounting phase: when a component is removed from the DOM. This allows you to update components without reloading the entire site.
+
+- [X] Explain the details of a Higher Order Component?
+
+A higher-order component allows you to re-use component logic, as it's a function that takes a component and returns a new component.
+
+- [X] What are three different ways to style components in React? Explain some of the benefits of each.
+
+1. Inline CSS: written as attributes and passed to elements. (+) -- you have the option to combine CSS with JSX code, easy to understand what style each component has, easier to work with more complex styling.
+
+2. CSS in JS: attaches style tag on top of DOM. (+) -- lets you think and design styles at component level which helps with isolation and testing.
+
+3. Styled components: defining styled components using ES6 template notation. (+) -- style without CSS classes as a mediator, when JS is parsed, generates unique class names and CSS is injected into DOM.
+
+4. Preprocessors: extend CSS with dynamic behaviour.
 
 ## Project Setup
 
 Follow these steps to set up your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your project manager as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
-- [ ] From within the `lambdatimes` folder run `yarn` and then `yarn start`. This will open your locally hosted application in your browser. Once you are ready move onto the next steps.
-- [ ] Inside the `Content` folder you will find all 5 components that make up the content of the application. The flow goes like this: `Content > Tabs > Tab` and `Content > Cards > Card`. Follow the directions in the `Content` component to get your data ready.
+- [X] Create a forked copy of this project.
+- [X] Add your project manager as collaborator on Github.
+- [X] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [X] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [X] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [X] Push commits: git push origin `<firstName-lastName>`.
+- [X] From within the `lambdatimes` folder run `yarn` and then `yarn start`. This will open your locally hosted application in your browser. Once you are ready move onto the next steps.
+- [X] Inside the `Content` folder you will find all 5 components that make up the content of the application. The flow goes like this: `Content > Tabs > Tab` and `Content > Cards > Card`. Follow the directions in the `Content` component to get your data ready.
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repository). **Please don't merge your own pull request**
-- [ ] Add your project manager as a reviewer on the pull-request
-- [ ] Your project manager will count the project as complete by merging the branch back into master.
+- [X] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repository). **Please don't merge your own pull request**
+- [X] Add your project manager as a reviewer on the pull-request
+- [X] Your project manager will count the project as complete by merging the branch back into master.
 
 ## Minimum Viable Product
 
